@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import lake from "./assets/lake.jpg";
 import meadow from "./assets/meadow.jpg";
