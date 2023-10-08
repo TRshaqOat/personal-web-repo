@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./App.css";
 import lake from "./assets/lake.jpg";
 import meadow from "./assets/meadow.jpg";
@@ -7,7 +7,9 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
 function App() {
-  const slides = [lake, meadow, waterfall];
+  const slides = useMemo(() => {
+    return [lake, meadow, waterfall];
+  }, []);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -28,12 +30,14 @@ function App() {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // Logic to rotate images every 3 seconds
+    // Function to rotate slides every 3 seconds
+    const rotateSlides = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000);
+    };
 
-    return () => clearInterval(interval);
+    const interval = setInterval(rotateSlides, 4000);
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [slides]);
 
   return (
