@@ -1,0 +1,5 @@
+/* Add this CSS in a separate CSS file or in your component's CSS-in-JS */
+.swiper-pagination-bullet {
+  background-color: white; /* Set the background color of the dots to white */
+  opacity: 0.8; /* Optional: Adjust the opacity to your preference */
+}
