@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import lake from "./assets/lake.jpg";
 import meadow from "./assets/meadow.jpg";
@@ -26,6 +26,15 @@ function App() {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Logic to rotate images every 3 seconds
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [slides]);
 
   return (
     <div className="h-[720px] w-full m-auto pb-10 relative group">
