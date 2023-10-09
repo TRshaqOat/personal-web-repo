@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
 
+import NavBar from "./components/NavBar";
+import ImageCarousel from "./components/ImageCarousel";
 import ActiveSlider from "./components/ActiveSlider";
 import CircleProgress from "./components/CircleProgress";
-import ImageCarousel from "./components/ImageCarousel";
 
 function App() {
   return (
     <div className="flex flex-col h-screen">
+      <NavBar />
       <ImageCarousel />
       <ActiveSlider />
       <div className="flex flex-row h-screen justify-center items-center bg-[#101a24]">
