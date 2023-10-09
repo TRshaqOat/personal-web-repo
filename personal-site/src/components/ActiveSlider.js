@@ -13,6 +13,13 @@ import { ServiceData } from "../constants";
 const ActiveSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#101a24]">
+      <header className="text-white shadow-lg pb-14">
+        <div className="container mx-auto">
+          <h1 className="text-4xl font-extrabold tracking-tighta animate-[pulse_1.5s_ease-in-out_infinite]">
+            Welcome to My Photography
+          </h1>
+        </div>
+      </header>
       <Swiper
         breakpoints={{
           340: {
@@ -40,7 +47,7 @@ const ActiveSlider = () => {
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
               />
               <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
-              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100" />
+              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-300" />
             </div>
           </SwiperSlide>
         ))}

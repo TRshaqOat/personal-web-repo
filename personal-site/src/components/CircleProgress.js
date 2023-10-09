@@ -26,7 +26,7 @@ const CircleProgress = (props) => {
       <CardFooter className="justify-center items-center pt-5">
         <Chip
           classNames={{
-            base: "border border-white/50 px-1.5 py-1",
+            base: "border border-white/50 px-2 py-1",
             content: "text-white/90 text-small font-semibold",
           }}
           variant="bordered"

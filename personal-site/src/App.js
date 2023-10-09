@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./CustomCSS/styles.css";
 
 import NavBar from "./components/NavBar";
 import ImageCarousel from "./components/ImageCarousel";
@@ -11,6 +12,7 @@ function App() {
     <div className="flex flex-col h-screen">
       <NavBar />
       <ImageCarousel />
+      {/* <hr className="my-12 h-0.5 border-t-0 gradient-border" /> */}
       <ActiveSlider />
       <div className="flex flex-row h-screen justify-center items-center bg-[#101a24]">
         <CircleProgress value={5} text={"Strengths"} />
