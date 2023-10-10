@@ -32,8 +32,8 @@ const ActiveSlider = () => {
             <div className="absolute -top-12 w-32 ml-10 h-32  bg-[#036c6e] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob"></div>
             <div className="absolute -top-7 left-20 ml-10 w-32 h-32 bg-[#3ba7a9] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-2000"></div>
             <div className="absolute -top-7 -ml-10 -left-2 -mb-0 w-32 h-32 bg-[#64b8b9] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-3000"></div>
-            <div className="absolute -top-12 -ml-40 -mb-0 w-32 h-32 bg-[#167d7f] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-4000"></div>
-            <div className="absolute -top-7 -ml-60 -left-2 -mb-0 w-32 h-32 bg-[#036c6e] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-5000"></div>
+            <div className="absolute -top-12 -ml-40 -left-2 -mb-0 w-32 h-32 bg-[#167d7f] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-4000"></div>
+            <div className="absolute -top-7 -ml-60 -left-10 -mb-0 w-32 h-32 bg-[#036c6e] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-5000"></div>
           </div>
         </div>
         <header className="text-white pb-20">

@@ -45,6 +45,9 @@ const ImageCarousel = () => {
 
   return (
     <div className="h-[720px] w-full m-auto pb-10 relative group bg-[#101a24]">
+      <header className="font-slab absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 text-white text-6xl font-bold text-center">
+        Where Nature Meets the Perfect Frame
+      </header>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex]})` }}
         className="w-full h-full bg-center bg-cover duration-500"
@@ -74,3 +77,5 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
+<style>@import url("https://use.typekit.net/ggp8rhb.css");</style>;

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        slab: ["josefin - slab", "serif"],
+      },
       animation: {
         "spin-slow": "spin 0.1s linear infinite",
         blob: "blob 7s infinite",
