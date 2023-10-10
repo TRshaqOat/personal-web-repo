@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "../CustomCSS/pagination.css";
+import "../CustomCSS/styles.css";
 
 import { FreeMode, Pagination } from "swiper/modules";
 
@@ -13,6 +14,18 @@ import { ServiceData } from "../constants";
 const ActiveSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#101a24]">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div className="relative">
         <div className="relative flex items-center justify-center">
           <div className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

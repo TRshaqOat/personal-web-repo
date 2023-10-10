@@ -9,7 +9,7 @@ import {
 const CircleProgress = (props) => {
   const { value, text } = props;
   return (
-    <Card className="w-[240px] h-[240px] border-none bg-[#101a24]">
+    <Card className="w-[240px] h-[240px] border-none bg-transparent">
       <CardBody className="justify-center items-center pb-0">
         <CircularProgress
           classNames={{
