@@ -13,13 +13,24 @@ import { ServiceData } from "../constants";
 const ActiveSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#101a24]">
-      <header className="text-white shadow-lg pb-14">
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-extrabold tracking-tighta animate-[pulse_1.5s_ease-in-out_infinite]">
-            Welcome to My Photography
-          </h1>
+      <div className="relative">
+        <div className="relative flex items-center justify-center">
+          <div className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute -top-12 w-32 ml-10 h-32  bg-[#036c6e] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob"></div>
+            <div className="absolute -top-7 left-20 ml-10 w-32 h-32 bg-[#3ba7a9] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-2000"></div>
+            <div className="absolute -top-7 -ml-10 -left-2 -mb-0 w-32 h-32 bg-[#64b8b9] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-3000"></div>
+            <div className="absolute -top-12 -ml-40 -mb-0 w-32 h-32 bg-[#167d7f] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-4000"></div>
+            <div className="absolute -top-7 -ml-60 -left-2 -mb-0 w-32 h-32 bg-[#036c6e] rounded-full mix-blend-multiply filter opacity-30 blur-xl animate-blob animation-delay-5000"></div>
+          </div>
         </div>
-      </header>
+        <header className="text-white pb-20">
+          <div className="container mx-auto">
+            <h1 className="text-4xl font-extrabold tracking-tighta">
+              Welcome to My Photography
+            </h1>
+          </div>
+        </header>
+      </div>
       <Swiper
         breakpoints={{
           340: {

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       animation: {
         "spin-slow": "spin 0.1s linear infinite",
+        blob: "blob 7s infinite",
       },
       colors: {
         neutral: {
@@ -17,6 +18,22 @@ module.exports = {
           700: "#4a5568",
           800: "#2d3748",
           900: "#1a202c",
+        },
+      },
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(20px, -20px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-10px, 5px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
         },
       },
     },
