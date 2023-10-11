@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { Helmet } from "react-helmet";
 
 import lake from "../assets/lake.jpg";
 import meadow from "../assets/meadow.jpg";
@@ -45,6 +46,14 @@ const ImageCarousel = () => {
 
   return (
     <div className="h-[720px] w-full m-auto pb-10 relative group bg-[#101a24]">
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <header className="font-slab absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 text-white text-6xl font-bold text-center">
         Where Nature Meets the Perfect Frame
       </header>
@@ -53,12 +62,20 @@ const ImageCarousel = () => {
         className="w-full h-full bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-4xl rounded-full p-2 text-white cursor-pointer">
+        <BsChevronCompactLeft
+          onClick={prevSlide}
+          size={45}
+          className="hover:scale-125 duration-300"
+        />
       </div>
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-4xl rounded-full p-2 text-white cursor-pointer">
+        <BsChevronCompactRight
+          onClick={nextSlide}
+          size={45}
+          className="hover:scale-125 duration-300"
+        />
       </div>
       <div className="flex top-4 justify-center py-2 bg-[#101a24]">
         {slides.map((slide, slideIndex) => (
@@ -77,5 +94,3 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
-
-<style>@import url("https://use.typekit.net/ggp8rhb.css");</style>;

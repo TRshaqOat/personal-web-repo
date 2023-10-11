@@ -16,7 +16,7 @@ const CircleProgress = (props) => {
             svg: "w-36 h-36 drop-shadow-md",
             indicator: "stroke-white",
             track: "stroke-white/10",
-            value: "text-3xl font-semibold text-white",
+            value: "text-3xl font-semibold text-white animate-pulse",
           }}
           value={value}
           strokeWidth={4}

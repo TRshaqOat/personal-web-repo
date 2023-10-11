@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        slab: ["josefin - slab", "serif"],
+        slab: ["Hepta Slab", "serif"],
       },
       animation: {
         "spin-slow": "spin 0.1s linear infinite",

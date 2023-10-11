@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "../CustomCSS/pagination.css";
 import "../CustomCSS/styles.css";
+import { Helmet } from "react-helmet";
 
 import { FreeMode, Pagination } from "swiper/modules";
 
@@ -14,6 +15,14 @@ import { ServiceData } from "../constants";
 const ActiveSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#101a24]">
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <div class="box">
         <div></div>
         <div></div>
@@ -38,7 +47,7 @@ const ActiveSlider = () => {
         </div>
         <header className="text-white pb-20">
           <div className="container mx-auto">
-            <h1 className="text-4xl font-extrabold tracking-tighta">
+            <h1 className="font-slab text-4xl font-extrabold tracking-tighta">
               Welcome to My Photography
             </h1>
           </div>
@@ -71,7 +80,7 @@ const ActiveSlider = () => {
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
               />
               <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
-              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-300" />
+              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-cyan-700 group-hover:rotate-45 duration-300" />
             </div>
           </SwiperSlide>
         ))}
