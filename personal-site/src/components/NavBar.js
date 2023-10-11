@@ -16,7 +16,11 @@ const NavBar = () => {
         >
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://example.com/" className="flex items-center">
-              <img src={logo} className="h-8 mr-3" alt="Wild Frame Logo" />
+              <img
+                src={logo}
+                className="h-10 w-10 mr-3"
+                alt="Wild Frame Logo"
+              />
               <div className="pl-4 flex-col">
                 <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Wild Frame
