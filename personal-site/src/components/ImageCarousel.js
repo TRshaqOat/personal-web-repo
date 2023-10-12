@@ -45,7 +45,10 @@ const ImageCarousel = () => {
   }, [slides]);
 
   return (
-    <div className="h-[720px] w-full m-auto pb-10 relative group bg-[#101a24]">
+    <div
+      className="h-[720px] w-full m-auto pb-10 relative group bg-[#101a24]"
+      id="carouselsection"
+    >
       <Helmet>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

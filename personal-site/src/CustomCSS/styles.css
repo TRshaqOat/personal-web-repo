@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 .gradient-border {
   position: relative;
 }
@@ -37,31 +42,31 @@
 }
 
 .box div:nth-child(1) {
-  top: 200%;
+  top: 220%;
   left: 15%;
   animation: animate 10s linear infinite;
 }
 
 .box div:nth-child(2) {
-  top: 270%;
+  top: 290%;
   left: 45%;
   animation: animate 7s linear infinite;
 }
 
 .box div:nth-child(3) {
-  top: 217%;
+  top: 237%;
   left: 5%;
   animation: animate 9s linear infinite;
 }
 
 .box div:nth-child(4) {
-  top: 220%;
+  top: 240%;
   left: 55%;
   animation: animate 10s linear infinite;
 }
 
 .box div:nth-child(5) {
-  top: 267%;
+  top: 287%;
   left: 7%;
   animation: animate 6s linear infinite;
 }
@@ -73,25 +78,25 @@
 }
 
 .box div:nth-child(7) {
-  top: 250%;
+  top: 270%;
   left: 88%;
   animation: animate 15s linear infinite;
 }
 
 .box div:nth-child(8) {
-  top: 232%;
+  top: 252%;
   left: 30%;
   animation: animate 16s linear infinite;
 }
 
 .box div:nth-child(9) {
-  top: 290%;
+  top: 310%;
   left: 20%;
   animation: animate 9s linear infinite;
 }
 
 .box div:nth-child(10) {
-  top: 200%;
+  top: 220%;
   left: 85%;
   animation: animate 5s linear infinite;
 }

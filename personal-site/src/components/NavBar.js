@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { Helmet } from "react-helmet";
+import "../CustomCSS/styles.css";
 
 const NavBar = () => {
   const navigateToLink = () => {
@@ -80,7 +81,7 @@ const NavBar = () => {
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
                 <li>
                   <a
-                    href="https://example.com"
+                    href="#carouselsection"
                     className="font-slab block py-2 pl-3 pr-4 text-white bg-[#167d7f] rounded md:bg-transparent md:text-cyan-700 md:p-0 md:dark:text-cyan-600"
                     aria-current="page"
                   >
@@ -89,7 +90,7 @@ const NavBar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://example.com"
+                    href="#aboutsection"
                     className="font-slab block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-cyan-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 duration-300"
                   >
                     About Me
@@ -97,7 +98,7 @@ const NavBar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://example.com"
+                    href="#swipersection"
                     className="font-slab block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-cyan-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 duration-300"
                   >
                     Best Work
@@ -105,7 +106,7 @@ const NavBar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://example.com"
+                    href="#progresssection"
                     className="font-slab block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-cyan-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 duration-300"
                   >
                     Skills

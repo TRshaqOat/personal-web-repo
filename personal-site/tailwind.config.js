@@ -3,13 +3,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      scrollBehavior: {
+        slow: "cubic-bezier(0.33, 0, 0.68, 1)",
+      },
       fontFamily: {
         slab: ["Hepta Slab", "serif"],
       },
       animation: {
         "spin-slow": "spin 0.1s linear infinite",
         blob: "blob 7s infinite",
-        newpulse: "newpulse 2s 0.5s ease-out infinite",
+        newpulse: "newpulse 3s 0.5s ease-out infinite",
       },
       colors: {
         neutral: {
@@ -53,7 +56,7 @@ module.exports = {
             boxShadow: "0 0 0 0 rgba(16, 26, 16, 1)",
           },
           "100%": {
-            boxShadow: "0 0 0 60px rgba(16, 26, 16, 0)",
+            boxShadow: "0 0 0 65px rgba(16, 26, 16, 0)",
           },
         },
       },

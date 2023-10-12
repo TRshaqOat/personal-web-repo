@@ -14,7 +14,10 @@ import { ServiceData } from "../constants";
 
 const ActiveSlider = () => {
   return (
-    <div className="flex items-center justify-center flex-col h-[900px] bg-[#101a24]">
+    <div
+      className="flex items-center justify-center flex-col h-[900px] bg-[#101a24]"
+      id="swipersection"
+    >
       <Helmet>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
