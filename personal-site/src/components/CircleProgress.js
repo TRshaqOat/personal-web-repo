@@ -10,10 +10,7 @@ import { Helmet } from "react-helmet";
 const CircleProgress = (props) => {
   const { value, text } = props;
   return (
-    <Card
-      className="w-[240px] h-[240px] border-none bg-transparent"
-      id="progresssection"
-    >
+    <Card className="w-[240px] h-[240px] border-none bg-transparent pb-3">
       <Helmet>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +19,7 @@ const CircleProgress = (props) => {
           rel="stylesheet"
         />
       </Helmet>
+
       <CardBody className="justify-center items-center font-slab">
         <CircularProgress
           classNames={{
