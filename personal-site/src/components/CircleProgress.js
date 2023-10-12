@@ -5,12 +5,21 @@ import {
   Chip,
   CardFooter,
 } from "@nextui-org/react";
+import { Helmet } from "react-helmet";
 
 const CircleProgress = (props) => {
   const { value, text } = props;
   return (
     <Card className="w-[240px] h-[240px] border-none bg-transparent">
-      <CardBody className="justify-center items-center pb-0">
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
+      <CardBody className="justify-center items-center font-slab">
         <CircularProgress
           classNames={{
             svg: "w-36 h-36 drop-shadow-md",
@@ -23,7 +32,7 @@ const CircleProgress = (props) => {
           showValueLabel={true}
         />
       </CardBody>
-      <CardFooter className="justify-center items-center pt-5">
+      <CardFooter className="justify-center items-center pt-5 font-slab">
         <Chip
           classNames={{
             base: "border border-white/50 px-2 py-1",

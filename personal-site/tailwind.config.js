@@ -9,6 +9,7 @@ module.exports = {
       animation: {
         "spin-slow": "spin 0.1s linear infinite",
         blob: "blob 7s infinite",
+        newpulse: "newpulse 2s 0.5s ease-out infinite",
       },
       colors: {
         neutral: {
@@ -21,6 +22,7 @@ module.exports = {
           700: "#4a5568",
           800: "#2d3748",
           900: "#1a202c",
+          "main-blue": "#101a24",
         },
       },
       keyframes: {
@@ -36,6 +38,22 @@ module.exports = {
           },
           "100%": {
             transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+        blobtwo: {
+          "0%": {
+            transform: "scale(0.95)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+        newpulse: {
+          "0%": {
+            boxShadow: "0 0 0 0 rgba(16, 26, 16, 1)",
+          },
+          "100%": {
+            boxShadow: "0 0 0 60px rgba(16, 26, 16, 0)",
           },
         },
       },
