@@ -98,6 +98,7 @@ const Contact = () => {
                 backdropFilter: "blur(10px)",
                 WebkitBackdropFilter: "blur(10px)",
                 width: "550px",
+                height: "100px",
               }}
             />
           </div>
