@@ -1,12 +1,3 @@
-import {
-  RxCrop,
-  RxDesktop,
-  RxPencil2,
-  RxReader,
-  RxRocket,
-  RxAccessibility,
-} from "react-icons/rx";
-
 import fall from "../assets/fall.jpg";
 import field from "../assets/field.jpg";
 import lake from "../assets/lake.jpg";
@@ -14,39 +5,41 @@ import meadow from "../assets/meadow.jpg";
 import waterfall from "../assets/waterfall.jpg";
 import weird from "../assets/weird.jpg";
 
+import CustomMapMarker from "../CustomIcons/CustomMapMarker";
+
 export const ServiceData = [
   {
-    icon: RxCrop,
+    icon: CustomMapMarker,
     title: "Development",
     content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
     backgroundImage: fall,
   },
   {
-    icon: RxPencil2,
+    icon: CustomMapMarker,
     title: "Branding",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     backgroundImage: field,
   },
   {
-    icon: RxDesktop,
+    icon: CustomMapMarker,
     title: "Design",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     backgroundImage: lake,
   },
   {
-    icon: RxReader,
+    icon: CustomMapMarker,
     title: "Seo",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     backgroundImage: meadow,
   },
   {
-    icon: RxAccessibility,
+    icon: CustomMapMarker,
     title: "Management",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     backgroundImage: waterfall,
   },
   {
-    icon: RxRocket,
+    icon: CustomMapMarker,
     title: "Production",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     backgroundImage: weird,

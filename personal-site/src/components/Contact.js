@@ -8,6 +8,13 @@ import TypingText from "./TypingText";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { useForm, ValidationError } from "@formspree/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faSnapchat,
+  faFacebook,
+  faDiscord,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xyyqlwro");
@@ -187,6 +194,32 @@ const Contact = () => {
             </div>
           </div>
         </form>
+      </div>
+      <div className="flex justify-center space-x-4 pt-10">
+        <a href="https://www.instagram.com/nature_photodump/">
+          <FontAwesomeIcon
+            className="text-neutral-main-blue text-2xl"
+            icon={faInstagram}
+          />
+        </a>
+        <a href="https://t.snapchat.com/4qM34aOz">
+          <FontAwesomeIcon
+            className="text-neutral-main-blue text-2xl"
+            icon={faSnapchat}
+          />
+        </a>
+        <a href="https://www.facebook.com/achyut.patel.9843?mibextid=LQQJ4d">
+          <FontAwesomeIcon
+            className="text-neutral-main-blue text-2xl"
+            icon={faFacebook}
+          />
+        </a>
+        <a href="https://discord.com/users/730473922654371912">
+          <FontAwesomeIcon
+            className="text-neutral-main-blue text-2xl"
+            icon={faDiscord}
+          />
+        </a>
       </div>
     </div>
   );

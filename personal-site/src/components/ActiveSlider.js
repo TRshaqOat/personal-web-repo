@@ -83,6 +83,10 @@ const ActiveSlider = () => {
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
               />
               <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center group-hover:opacity-100 opacity-0 transition duration-300">
+                <item.icon className="text-blue-600 group-hover:text-blue-400 w-[32px] h-[32px]" />
+                <p className="lg:text-[18px]">{item.content} </p>
+              </div>
               <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-cyan-700 group-hover:rotate-45 duration-300" />
             </div>
           </SwiperSlide>
