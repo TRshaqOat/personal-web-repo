@@ -3,18 +3,18 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { Helmet } from "react-helmet";
 
-import lake from "../assets/lake.jpg";
-import meadow from "../assets/meadow.jpg";
-import waterfall from "../assets/waterfall.jpg";
-import fall from "../assets/fall.jpg";
-import field from "../assets/field.jpg";
-import weird from "../assets/weird.jpg";
+import anakeesta from "../assets/anakeesta.jpeg";
+import chicago from "../assets/chicago.jpeg";
+import gatlinburg from "../assets/gatlinburg.jpeg";
+import loyola from "../assets/loyola.jpeg";
+import mammoth from "../assets/mammoth.jpeg";
+import wallgolfcourse from "../assets/wallgolfcourse.jpeg";
 
 import TypingText from "./TypingText";
 
 const ImageCarousel = () => {
   const slides = useMemo(() => {
-    return [lake, meadow, waterfall, fall, field, weird];
+    return [anakeesta, chicago, gatlinburg, loyola, mammoth, wallgolfcourse];
   }, []);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +41,7 @@ const ImageCarousel = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     };
 
-    const interval = setInterval(rotateSlides, 4000);
+    const interval = setInterval(rotateSlides, 6000);
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [slides]);
@@ -64,7 +64,7 @@ const ImageCarousel = () => {
       </header>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex]})` }}
-        className="w-full h-full bg-center bg-cover duration-500"
+        className="w-full h-full bg-center bg-cover duration-700"
       ></div>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-4xl rounded-full p-2 text-white cursor-pointer">

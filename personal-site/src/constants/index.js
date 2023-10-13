@@ -1,9 +1,9 @@
-import fall from "../assets/fall.jpg";
-import field from "../assets/field.jpg";
-import lake from "../assets/lake.jpg";
-import meadow from "../assets/meadow.jpg";
-import waterfall from "../assets/waterfall.jpg";
-import weird from "../assets/weird.jpg";
+import badlands from "../assets/badlands.jpeg";
+import badlandsglasses from "../assets/badlandsglasses.jpeg";
+import chinatown from "../assets/chinatown.jpeg";
+import india from "../assets/india.jpeg";
+import loyolabeach from "../assets/loyolabeach.jpeg";
+import wallgolfcourse from "../assets/wallgolfcourse.jpeg";
 
 import CustomMapMarker from "../CustomIcons/CustomMapMarker";
 
@@ -11,37 +11,37 @@ export const ServiceData = [
   {
     icon: CustomMapMarker,
     title: "Development",
-    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-    backgroundImage: fall,
+    content: "Badlands, South Dakota",
+    backgroundImage: badlands,
   },
   {
     icon: CustomMapMarker,
     title: "Branding",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: field,
+    content: "Badlands, South Dakota",
+    backgroundImage: badlandsglasses,
   },
   {
     icon: CustomMapMarker,
     title: "Design",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: lake,
+    content: "Chinatown, Chicago",
+    backgroundImage: chinatown,
   },
   {
     icon: CustomMapMarker,
     title: "Seo",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: meadow,
+    content: "Gujrat, India",
+    backgroundImage: india,
   },
   {
     icon: CustomMapMarker,
     title: "Management",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: waterfall,
+    content: "Loyola Beach, Chicago",
+    backgroundImage: loyolabeach,
   },
   {
     icon: CustomMapMarker,
     title: "Production",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: weird,
+    content: "Wall Golf, South Dakota",
+    backgroundImage: wallgolfcourse,
   },
 ];
