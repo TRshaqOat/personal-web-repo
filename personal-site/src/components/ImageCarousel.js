@@ -10,6 +10,8 @@ import fall from "../assets/fall.jpg";
 import field from "../assets/field.jpg";
 import weird from "../assets/weird.jpg";
 
+import TypingText from "./TypingText";
+
 const ImageCarousel = () => {
   const slides = useMemo(() => {
     return [lake, meadow, waterfall, fall, field, weird];
@@ -58,7 +60,7 @@ const ImageCarousel = () => {
         />
       </Helmet>
       <header className="font-slab absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 text-white text-6xl font-bold text-center">
-        Where Nature Meets the Perfect Frame
+        <TypingText text="Where Nature Meets the Perfect Frame." speed={50} />
       </header>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex]})` }}

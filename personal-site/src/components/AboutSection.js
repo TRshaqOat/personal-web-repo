@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import "../CustomCSS/styles.css";
 
 import me from "../assets/me.jpeg";
 
+import TypingText from "./TypingText";
+
 const AboutSection = () => {
+  const componentRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleIntersection = (entries) => {
+    if (entries[0].isIntersecting) {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: "0px",
+      threshold: 0.5, // When 50% of the component is visible
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="relative" id="aboutsection">
       <div class="absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-1/2 pr-80 pl-24 z-0">
@@ -53,8 +83,12 @@ const AboutSection = () => {
             />
           </div>
         </div>
-        <div className="ml-4 w-2/3 pl-20">
-          <h2 className="text-6xl font-bold pl-5 mb-2 font-slab">Who Am I?</h2>
+        <div ref={componentRef} className="ml-4 w-2/3 pl-20">
+          {isVisible && (
+            <h2 className="text-6xl font-bold pl-5 mb-2 font-slab">
+              <TypingText text="Who Am I?" speed={100} />
+            </h2>
+          )}
           <p className="font-slab text-md pt-5 pl-8">Hi, I am Achyut Patel</p>
         </div>
       </div>
