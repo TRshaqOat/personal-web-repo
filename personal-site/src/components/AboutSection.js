@@ -85,11 +85,29 @@ const AboutSection = () => {
         </div>
         <div ref={componentRef} className="ml-4 w-2/3 pl-20">
           {isVisible && (
-            <h2 className="text-6xl font-bold pl-5 mb-2 font-slab">
+            <h2 className="text-6xl font-bold pl-1 mb-2 font-slab">
               <TypingText text="Who Am I?" speed={100} />
             </h2>
           )}
-          <p className="font-slab text-md pt-5 pl-8">Hi, I am Achyut Patel</p>
+          <p className="font-slab text-md pt-5 pl-3">Hi, I am Achyut Patel</p>
+          <p className="font-slab text-md pt-5 pl-3">
+            A high school senior, coder, and volleyball enthusiast with a
+            passion
+          </p>
+          <p className="font-slab text-md pl-3">
+            for photography. When not on the court, I'm behind the lens,
+            capturing moments and crafting visual stories.
+          </p>
+          <p className="font-slab text-md pt-5 pl-3">
+            My coding skills and creative eye merge here to enhance your
+          </p>
+          <p className="font-slab text-md pl-3">
+            visual journey. I believe in the power of images to connect and
+            inspire.
+          </p>
+          <p className="font-slab text-md pt-5 pl-3">
+            Join me in exploring the world, one click at a time.
+          </p>
         </div>
       </div>
     </div>
