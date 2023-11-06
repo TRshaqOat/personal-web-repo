@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { Helmet } from "react-helmet";
@@ -10,12 +10,24 @@ import wallgolfcourse from "../assets/wallgolfcourse.jpeg";
 
 import TypingText from "./TypingText";
 
+const imageClass =
+  "w-full h-full bg-center bg-cover transition-transform duration-700";
+
 const ImageCarousel = () => {
   const slides = useMemo(() => {
     return [chicago, loyola, mammoth, wallgolfcourse];
   }, []);
-
+  const imageRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const preloadImages = () => {
+      slides.forEach((image) => {
+        new Image().src = image;
+      });
+    };
+    preloadImages();
+  }, [slides]);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -39,10 +51,17 @@ const ImageCarousel = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     };
 
-    const interval = setInterval(rotateSlides, 6000);
+    const interval = setInterval(rotateSlides, 3000);
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [slides]);
+
+  useEffect(() => {
+    // Update the image source when currentIndex changes
+    if (imageRef.current) {
+      imageRef.current.src = slides[currentIndex];
+    }
+  }, [currentIndex, slides]);
 
   return (
     <div
@@ -60,10 +79,11 @@ const ImageCarousel = () => {
       <header className="font-slab absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 text-white text-6xl font-bold text-center">
         <TypingText text="Where Nature Meets the Perfect Frame." speed={50} />
       </header>
-      <div
+      {/* <div
         style={{ backgroundImage: `url(${slides[currentIndex]})` }}
         className="w-full h-full bg-center bg-cover duration-700"
-      ></div>
+      ></div> */}
+      <img ref={imageRef} className={imageClass} />
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-4xl rounded-full p-2 text-white cursor-pointer">
         <BsChevronCompactLeft
