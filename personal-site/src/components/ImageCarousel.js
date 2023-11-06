@@ -11,7 +11,7 @@ import wallgolfcourse from "../assets/wallgolfcourse.jpeg";
 import TypingText from "./TypingText";
 
 const imageClass =
-  "w-full h-full bg-center bg-cover transition-transform duration-700";
+  "w-full h-full bg-center object-fit: contain transition-transform duration-700";
 
 const ImageCarousel = () => {
   const slides = useMemo(() => {
@@ -51,7 +51,7 @@ const ImageCarousel = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     };
 
-    const interval = setInterval(rotateSlides, 3000);
+    const interval = setInterval(rotateSlides, 6000);
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [slides]);
