@@ -3,9 +3,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { Helmet } from "react-helmet";
 
-import anakeesta from "../assets/anakeesta.jpeg";
 import chicago from "../assets/chicago.jpeg";
-import gatlinburg from "../assets/gatlinburg.jpeg";
 import loyola from "../assets/loyola.jpeg";
 import mammoth from "../assets/mammoth.jpeg";
 import wallgolfcourse from "../assets/wallgolfcourse.jpeg";
@@ -14,7 +12,7 @@ import TypingText from "./TypingText";
 
 const ImageCarousel = () => {
   const slides = useMemo(() => {
-    return [anakeesta, chicago, gatlinburg, loyola, mammoth, wallgolfcourse];
+    return [chicago, loyola, mammoth, wallgolfcourse];
   }, []);
 
   const [currentIndex, setCurrentIndex] = useState(0);
