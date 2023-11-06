@@ -11,7 +11,7 @@ import wallgolfcourse from "../assets/wallgolfcourse.jpeg";
 import TypingText from "./TypingText";
 
 const imageClass =
-  "w-full h-full bg-center object-fit: contain transition-transform duration-700";
+  "w-full h-full bg-center bg-cover transition-transform duration-700 object-cover";
 
 const ImageCarousel = () => {
   const slides = useMemo(() => {
